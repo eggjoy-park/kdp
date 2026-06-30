@@ -1,0 +1,68 @@
+{
+  "version": "1.0",
+  "defaultLanguage": "en",
+  "supportedLanguages": [
+    { "code": "en", "label": "English", "flag": "🇺🇸" }
+  ],
+  "ui": {
+    "en": {
+      "siteTitle": "Korean Daily Phrases",
+      "siteSubtitle": "Listen and learn everyday Korean",
+      "playButton": "Listen",
+      "stopButton": "Stop",
+      "categoryLabel": "Category",
+      "ttsUnsupported": "This browser does not support audio playback.",
+      "ttsNoKoreanVoice": "No Korean voice is installed on this system.",
+      "dataLoadError": "Failed to load data. Please refresh.",
+      "retryButton": "Retry",
+      "footerNote": "Powered by Web Speech API"
+    }
+  },
+  "categories": {
+    "greetings":  { "en": "Greetings" },
+    "restaurant": { "en": "Restaurant" },
+    "emergency":  { "en": "Emergency" }
+  },
+  "sentences": [
+    {
+      "id": "greetings-01",
+      "category": "greetings",
+      "ko": "안녕하세요",
+      "translations": {
+        "en": { "meaning": "Hello (polite)", "pronunciation": "an-nyeong-ha-se-yo" }
+      }
+    },
+    {
+      "id": "greetings-02",
+      "category": "greetings",
+      "ko": "감사합니다",
+      "translations": {
+        "en": { "meaning": "Thank you", "pronunciation": "gam-sa-ham-ni-da" }
+      }
+    },
+    {
+      "id": "greetings-03",
+      "category": "greetings",
+      "ko": "죄송합니다",
+      "translations": {
+        "en": { "meaning": "I'm sorry", "pronunciation": "joe-song-ham-ni-da" }
+      }
+    },
+    {
+      "id": "restaurant-01",
+      "category": "restaurant",
+      "ko": "이거 맛있어요",
+      "translations": {
+        "en": { "meaning": "This is delicious", "pronunciation": "i-geo ma-si-sseo-yo" }
+      }
+    },
+    {
+      "id": "emergency-01",
+      "category": "emergency",
+      "ko": "도와주세요",
+      "translations": {
+        "en": { "meaning": "Please help me", "pronunciation": "do-a-ju-se-yo" }
+      }
+    }
+  ]
+}

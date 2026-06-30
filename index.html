@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn everyday Korean phrases with audio pronunciation in your language." />
+  <title>Korean Daily Phrases</title>
+
+  <!-- Noto Sans KR for Korean text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="site-header">
+      <div class="header-text">
+        <h1 id="site-title">Korean Daily Phrases</h1>
+        <p id="site-subtitle" class="subtitle">Listen and learn everyday Korean</p>
+      </div>
+      <div class="language-selector">
+        <label for="language-select" class="visually-hidden">Language</label>
+        <select id="language-select" aria-label="Select language">
+          <!-- populated by app.js -->
+        </select>
+      </div>
+    </header>
+
+    <div id="error-banner" class="error-banner" hidden role="alert">
+      <span id="error-message">Failed to load data. Please refresh.</span>
+      <button id="retry-button" type="button" class="retry-button">Retry</button>
+    </div>
+
+    <main id="sentences-container" class="sentences-container" aria-live="polite">
+      <!-- cards rendered by app.js -->
+    </main>
+
+    <footer class="site-footer">
+      <p id="footer-note">Powered by Web Speech API</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
