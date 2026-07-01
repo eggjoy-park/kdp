@@ -2,7 +2,41 @@
   "version": "1.0",
   "defaultLanguage": "en",
   "supportedLanguages": [
-    { "code": "en", "label": "English", "flag": "🇺🇸" }
+    {
+      "code": "en",
+      "label": "English",
+      "flag": "🇺🇸"
+    },
+    {
+      "code": "ja",
+      "label": "日本語",
+      "flag": "🇯🇵"
+    },
+    {
+      "code": "zh",
+      "label": "中文",
+      "flag": "🇨🇳"
+    },
+    {
+      "code": "es",
+      "label": "Español",
+      "flag": "🇪🇸"
+    },
+    {
+      "code": "fr",
+      "label": "Français",
+      "flag": "🇫🇷"
+    },
+    {
+      "code": "de",
+      "label": "Deutsch",
+      "flag": "🇩🇪"
+    },
+    {
+      "code": "ar",
+      "label": "العربية",
+      "flag": "🇸🇦"
+    }
   ],
   "ui": {
     "en": {
@@ -16,12 +50,108 @@
       "dataLoadError": "Failed to load data. Please refresh.",
       "retryButton": "Retry",
       "footerNote": "Powered by Web Speech API"
+    },
+    "ja": {
+      "siteTitle": "韓国の日常フレーズ",
+      "siteSubtitle": "韓国語のフレーズを聞いて学ぼう",
+      "playButton": "聞く",
+      "stopButton": "停止",
+      "categoryLabel": "カテゴリー",
+      "ttsUnsupported": "このブラウザは音声再生に対応していません。",
+      "ttsNoKoreanVoice": "韓国語の音声がインストールされていません。",
+      "dataLoadError": "データの読み込みに失敗しました。",
+      "retryButton": "再試行",
+      "footerNote": "Web Speech API を使用"
+    },
+    "zh": {
+      "siteTitle": "韩国日常用语",
+      "siteSubtitle": "听韩语，学日常",
+      "playButton": "播放",
+      "stopButton": "停止",
+      "categoryLabel": "分类",
+      "ttsUnsupported": "此浏览器不支持音频播放。",
+      "ttsNoKoreanVoice": "此系统未安装韩语语音。",
+      "dataLoadError": "数据加载失败，请刷新。",
+      "retryButton": "重试",
+      "footerNote": "基于 Web Speech API"
+    },
+    "es": {
+      "siteTitle": "Frases Diarias en Coreano",
+      "siteSubtitle": "Escucha y aprende coreano cotidiano",
+      "playButton": "Escuchar",
+      "stopButton": "Detener",
+      "categoryLabel": "Categoría",
+      "ttsUnsupported": "Este navegador no admite la reproducción de audio.",
+      "ttsNoKoreanVoice": "No hay voz coreana instalada en este sistema.",
+      "dataLoadError": "Error al cargar los datos. Por favor, recarga.",
+      "retryButton": "Reintentar",
+      "footerNote": "Con tecnología de Web Speech API"
+    },
+    "fr": {
+      "siteTitle": "Expressions Quotidiennes en Coréen",
+      "siteSubtitle": "Écoutez et apprenez le coréen quotidien",
+      "playButton": "Écouter",
+      "stopButton": "Arrêter",
+      "categoryLabel": "Catégorie",
+      "ttsUnsupported": "Ce navigateur ne prend pas en charge la lecture audio.",
+      "ttsNoKoreanVoice": "Aucune voix coréenne n'est installée sur ce système.",
+      "dataLoadError": "Échec du chargement des données. Veuillez actualiser.",
+      "retryButton": "Réessayer",
+      "footerNote": "Propulsé par Web Speech API"
+    },
+    "de": {
+      "siteTitle": "Koreanische Alltagsausdrücke",
+      "siteSubtitle": "Höre und lerne alltägliches Koreanisch",
+      "playButton": "Anhören",
+      "stopButton": "Stoppen",
+      "categoryLabel": "Kategorie",
+      "ttsUnsupported": "Dieser Browser unterstützt keine Audiowiedergabe.",
+      "ttsNoKoreanVoice": "Auf diesem System ist keine koreanische Stimme installiert.",
+      "dataLoadError": "Daten konnten nicht geladen werden. Bitte aktualisieren.",
+      "retryButton": "Erneut versuchen",
+      "footerNote": "Bereitgestellt von Web Speech API"
+    },
+    "ar": {
+      "siteTitle": "العبارات الكورية اليومية",
+      "siteSubtitle": "استمع وتعلم الكورية اليومية",
+      "playButton": "استمع",
+      "stopButton": "إيقاف",
+      "categoryLabel": "الفئة",
+      "ttsUnsupported": "هذا المتصفح لا يدعم تشغيل الصوت.",
+      "ttsNoKoreanVoice": "لا توجد لغة صوتية كورية مثبتة على هذا النظام.",
+      "dataLoadError": "فشل تحميل البيانات. يرجى إعادة التحميل.",
+      "retryButton": "إعادة المحاولة",
+      "footerNote": "مدعوم من Web Speech API"
     }
   },
   "categories": {
-    "greetings":  { "en": "Greetings" },
-    "restaurant": { "en": "Restaurant" },
-    "emergency":  { "en": "Emergency" }
+    "greetings": {
+      "en": "Greetings",
+      "ja": "挨拶",
+      "zh": "问候",
+      "es": "Saludos",
+      "fr": "Salutations",
+      "de": "Begrüßungen",
+      "ar": "تحيات"
+    },
+    "restaurant": {
+      "en": "Restaurant",
+      "ja": "レストラン",
+      "zh": "餐厅",
+      "es": "Restaurante",
+      "fr": "Restaurant",
+      "de": "Restaurant",
+      "ar": "مطعم"
+    },
+    "emergency": {
+      "en": "Emergency",
+      "ja": "緊急",
+      "zh": "紧急情况",
+      "es": "Emergencia",
+      "fr": "Urgence",
+      "de": "Notfall",
+      "ar": "طوارئ"
+    }
   },
   "sentences": [
     {
@@ -29,7 +159,34 @@
       "category": "greetings",
       "ko": "안녕하세요",
       "translations": {
-        "en": { "meaning": "Hello (polite)", "pronunciation": "an-nyeong-ha-se-yo" }
+        "en": {
+          "meaning": "Hello (polite)",
+          "pronunciation": "an-nyeong-ha-se-yo"
+        },
+        "ja": {
+          "meaning": "こんにちは（丁寧）",
+          "pronunciation": "アンニョンハセヨ"
+        },
+        "zh": {
+          "meaning": "你好（敬语）",
+          "pronunciation": "an nyeong ha se yo"
+        },
+        "es": {
+          "meaning": "Hola (formal)",
+          "pronunciation": "an-nion-ja-se-yo"
+        },
+        "fr": {
+          "meaning": "Bonjour (poli)",
+          "pronunciation": "an-nionn-ha-sé-yo"
+        },
+        "de": {
+          "meaning": "Hallo (höflich)",
+          "pronunciation": "an-njŏng-ha-sĕ-jo"
+        },
+        "ar": {
+          "meaning": "مرحبا (رسمي)",
+          "pronunciation": "an-nyŏng-ha-sĕ-yo"
+        }
       }
     },
     {
@@ -37,7 +194,34 @@
       "category": "greetings",
       "ko": "감사합니다",
       "translations": {
-        "en": { "meaning": "Thank you", "pronunciation": "gam-sa-ham-ni-da" }
+        "en": {
+          "meaning": "Thank you",
+          "pronunciation": "gam-sa-ham-ni-da"
+        },
+        "ja": {
+          "meaning": "ありがとうございます",
+          "pronunciation": "ガムサハムニダ"
+        },
+        "zh": {
+          "meaning": "谢谢",
+          "pronunciation": "gam sa ham ni da"
+        },
+        "es": {
+          "meaning": "Gracias",
+          "pronunciation": "gam-sa-am-ni-da"
+        },
+        "fr": {
+          "meaning": "Merci",
+          "pronunciation": "gam-sa-am-ni-da"
+        },
+        "de": {
+          "meaning": "Danke",
+          "pronunciation": "gam-sa-ham-ni-da"
+        },
+        "ar": {
+          "meaning": "شكرا",
+          "pronunciation": "gam-sa-ham-ni-da"
+        }
       }
     },
     {
@@ -45,7 +229,34 @@
       "category": "greetings",
       "ko": "죄송합니다",
       "translations": {
-        "en": { "meaning": "I'm sorry", "pronunciation": "joe-song-ham-ni-da" }
+        "en": {
+          "meaning": "I'm sorry",
+          "pronunciation": "joe-song-ham-ni-da"
+        },
+        "ja": {
+          "meaning": "すみません",
+          "pronunciation": "ジョエソンハムニダ"
+        },
+        "zh": {
+          "meaning": "对不起",
+          "pronunciation": "joe song ham ni da"
+        },
+        "es": {
+          "meaning": "Lo siento",
+          "pronunciation": "joe-song-am-ni-da"
+        },
+        "fr": {
+          "meaning": "Je suis désolé",
+          "pronunciation": "joe-song-am-ni-da"
+        },
+        "de": {
+          "meaning": "Es tut mir leid",
+          "pronunciation": "tschŏ-song-ham-ni-da"
+        },
+        "ar": {
+          "meaning": "آسف",
+          "pronunciation": "jwĕ-song-ham-ni-da"
+        }
       }
     },
     {
@@ -53,7 +264,34 @@
       "category": "restaurant",
       "ko": "이거 맛있어요",
       "translations": {
-        "en": { "meaning": "This is delicious", "pronunciation": "i-geo ma-si-sseo-yo" }
+        "en": {
+          "meaning": "This is delicious",
+          "pronunciation": "i-geo ma-si-sseo-yo"
+        },
+        "ja": {
+          "meaning": "これは美味しいです",
+          "pronunciation": "イゴ マシッソヨ"
+        },
+        "zh": {
+          "meaning": "这个好吃",
+          "pronunciation": "i geo ma si sseo yo"
+        },
+        "es": {
+          "meaning": "Esto está delicioso",
+          "pronunciation": "i-go-ma-si-sseo-yo"
+        },
+        "fr": {
+          "meaning": "C'est délicieux",
+          "pronunciation": "i-geu-ma-si-sseo-yo"
+        },
+        "de": {
+          "meaning": "Das ist lecker",
+          "pronunciation": "i-gŏ-ma-si-ssŏ-yo"
+        },
+        "ar": {
+          "meaning": "هذا لذيذ",
+          "pronunciation": "i-gŏ-ma-si-ssŏ-yo"
+        }
       }
     },
     {
@@ -61,7 +299,34 @@
       "category": "emergency",
       "ko": "도와주세요",
       "translations": {
-        "en": { "meaning": "Please help me", "pronunciation": "do-a-ju-se-yo" }
+        "en": {
+          "meaning": "Please help me",
+          "pronunciation": "do-a-ju-se-yo"
+        },
+        "ja": {
+          "meaning": "助けてください",
+          "pronunciation": "トワジュセヨ"
+        },
+        "zh": {
+          "meaning": "请帮帮我",
+          "pronunciation": "do a ju se yo"
+        },
+        "es": {
+          "meaning": "¡Ayuda, por favor!",
+          "pronunciation": "do-a-ju-se-yo"
+        },
+        "fr": {
+          "meaning": "Au secours !",
+          "pronunciation": "do-a-ju-se-yo"
+        },
+        "de": {
+          "meaning": "Hilfe, bitte!",
+          "pronunciation": "to-a-ju-sĕ-yo"
+        },
+        "ar": {
+          "meaning": "ساعدني من فضلك",
+          "pronunciation": "to-wa-ju-sĕ-yo"
+        }
       }
     }
   ]

@@ -15,7 +15,7 @@ A lightweight static site for learning everyday Korean phrases. Each sentence ca
 ## File Structure
 
 ```
-kimchi/
+korean-daily-phrases/
 ├── index.html            # Page skeleton (header, main, footer, error banner)
 ├── styles.css            # Pastel theme, responsive layout, animations
 ├── app.js                # Data fetch, card rendering, language switching, TTS
@@ -69,8 +69,8 @@ Edit `data/sentences.json` and append to the `sentences` array:
 
 ```json
 {
-  "id": "shopping-01",
-  "category": "shopping",
+  "id": "restaurant-02",
+  "category": "restaurant",
   "ko": "얼마예요?",
   "translations": {
     "en": {
@@ -84,6 +84,9 @@ Edit `data/sentences.json` and append to the `sentences` array:
 Run `node validate.js` to confirm the schema is still valid.
 
 ## Adding a New Language
+
+> *Note: The project currently ships with English only — this section documents how to extend it.*
+
 
 The data structure is designed so adding a language means filling in three places — `ui`, `categories`, and each sentence's `translations`. See the example below for adding Japanese:
 
@@ -106,7 +109,6 @@ The data structure is designed so adding a language means filling in three place
     "siteSubtitle": "韓国語のフレーズを聞いて学ぼう",
     "playButton": "聞く",
     "stopButton": "停止",
-    "categoryLabel": "カテゴリー",
     "ttsUnsupported": "このブラウザは音声再生に対応していません。",
     "ttsNoKoreanVoice": "韓国語の音声がインストールされていません。",
     "dataLoadError": "データの読み込みに失敗しました。",
@@ -142,7 +144,12 @@ The data structure is designed so adding a language means filling in three place
 
 Then run `node validate.js --all-languages` to verify every language has a complete translation for every sentence.
 
+> *Note: `categoryLabel` exists in the current data file but is not currently rendered by the UI.*
+
 ## Pronunciation Style per Language
+
+> *Note: The project currently ships with English only — this section documents how to extend it.*
+
 
 For best results, write pronunciation using the **phonetic inventory of the target language**:
 
