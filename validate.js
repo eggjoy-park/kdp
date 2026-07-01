@@ -129,6 +129,23 @@ function main() {
     if (!isNonEmptyString(s.ko)) {
       fail('Sentence "' + s.id + '" missing ko (Korean) text');
     }
+    // Optional illustration fields
+    if ('image' in s && s.image !== null && s.image !== undefined) {
+      if (!isNonEmptyString(s.image)) {
+        fail('Sentence "' + s.id + '" has image that is not a non-empty string');
+      } else if (!/\.(svg|png|jpg|jpeg|webp|gif)$/i.test(s.image.trim())) {
+        fail('Sentence "' + s.id + '" image path should end in .svg/.png/.jpg/.jpeg/.webp/.gif (got: ' + s.image + ')');
+      }
+    }
+    if ('imageAlt' in s && s.imageAlt !== null && s.imageAlt !== undefined) {
+      if (typeof s.imageAlt !== 'string') {
+        fail('Sentence "' + s.id + '" has imageAlt that is not a string');
+      }
+      // imageAlt may be empty (decorative), but if image is present a non-empty alt is recommended
+      if ('image' in s && s.image && (!s.imageAlt || !s.imageAlt.trim())) {
+        console.warn('  ! Sentence "' + s.id + '" has image but no imageAlt (consider adding alt text for accessibility)');
+      }
+    }
     if (typeof s.translations !== 'object' || s.translations === null) {
       fail('Sentence "' + s.id + '" missing translations');
       continue;

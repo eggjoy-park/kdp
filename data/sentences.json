@@ -158,6 +158,8 @@
       "id": "greetings-01",
       "category": "greetings",
       "ko": "안녕하세요",
+      "image": "images/greetings-01.svg",
+      "imageAlt": "Two people greeting each other with a polite bow",
       "translations": {
         "en": {
           "meaning": "Hello (polite)",
@@ -193,6 +195,8 @@
       "id": "greetings-02",
       "category": "greetings",
       "ko": "감사합니다",
+      "image": "images/greetings-02.svg",
+      "imageAlt": "Person bowing with hands together to express gratitude",
       "translations": {
         "en": {
           "meaning": "Thank you",
@@ -228,6 +232,8 @@
       "id": "greetings-03",
       "category": "greetings",
       "ko": "죄송합니다",
+      "image": "images/greetings-03.svg",
+      "imageAlt": "Person bowing apologetically with a sincere expression",
       "translations": {
         "en": {
           "meaning": "I'm sorry",
@@ -263,6 +269,8 @@
       "id": "restaurant-01",
       "category": "restaurant",
       "ko": "이거 맛있어요",
+      "image": "images/restaurant-01.svg",
+      "imageAlt": "Smiling diner enjoying a Korean meal at a table",
       "translations": {
         "en": {
           "meaning": "This is delicious",
@@ -298,6 +306,8 @@
       "id": "emergency-01",
       "category": "emergency",
       "ko": "도와주세요",
+      "image": "images/emergency-01.svg",
+      "imageAlt": "Person calling out with one hand raised for urgent help",
       "translations": {
         "en": {
           "meaning": "Please help me",

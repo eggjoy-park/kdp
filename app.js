@@ -301,6 +301,24 @@
     card.className = 'sentence-card';
     card.dataset.sentenceId = sentence.id;
 
+    // Illustration (always rendered; shows category-emoji fallback when no image).
+    const illustration = document.createElement('div');
+    illustration.className = 'card-illustration';
+    illustration.dataset.category = sentence.category;
+    if (sentence.image && sentence.image.trim()) {
+      const img = document.createElement('img');
+      img.src = sentence.image;
+      img.alt = sentence.imageAlt || '';
+      img.loading = 'lazy';
+      img.addEventListener('error', () => {
+        illustration.classList.add('no-image');
+      });
+      illustration.appendChild(img);
+    } else {
+      illustration.classList.add('no-image');
+    }
+    card.appendChild(illustration);
+
     const korean = document.createElement('p');
     korean.className = 'korean-text';
     korean.textContent = sentence.ko;

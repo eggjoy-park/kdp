@@ -268,13 +268,60 @@ body {
   box-shadow: var(--shadow-card);
   padding: 1.5rem 1.75rem;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 96px 1fr auto;
   grid-template-rows: auto auto auto;
   column-gap: 1.25rem;
   row-gap: 0.55rem;
   align-items: center;
   overflow: hidden;
   transition: transform 0.22s var(--ease-out), box-shadow 0.22s var(--ease-out);
+}
+
+/* ---------- Card illustration ---------- */
+.card-illustration {
+  grid-column: 1;
+  grid-row: 1 / -1;
+  width: 96px;
+  height: 96px;
+  align-self: center;
+  border-radius: 14px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 241, 230, 0.4) 100%),
+    var(--bg-card-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.04);
+}
+
+.card-illustration img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Per-category fallback emoji - hidden by default, shown only when image is missing */
+.card-illustration[data-category="greetings"]::before  { content: "👋"; }
+.card-illustration[data-category="restaurant"]::before { content: "🍜"; }
+.card-illustration[data-category="emergency"]::before  { content: "🚨"; }
+
+.card-illustration::before {
+  font-size: 2.5rem;
+  line-height: 1;
+  display: none;
+}
+
+.card-illustration.no-image::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-illustration.no-image img {
+  display: none;
 }
 
 /* Left accent bar in category color */
@@ -460,29 +507,38 @@ body {
 
   .sentence-card {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     row-gap: 0.625rem;
     padding: 1.25rem 1.4rem;
   }
 
-  .korean-text {
+  .card-illustration {
     grid-column: 1;
     grid-row: 1;
+    width: 100%;
+    height: 140px;
+    align-self: stretch;
+    border-radius: 12px;
+  }
+
+  .korean-text {
+    grid-column: 1;
+    grid-row: 2;
   }
 
   .play-button {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 3;
     justify-self: start;
   }
 
   .meaning {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 4;
   }
 
   .pronunciation {
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 5;
   }
 }

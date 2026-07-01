@@ -21,6 +21,8 @@ korean-daily-phrases/
 ├── app.js                # Data fetch, card rendering, language switching, TTS
 ├── data/
 │   └── sentences.json    # All sentences + per-language translations
+├── images/               # Card scene illustrations (see images/README.md)
+│   └── README.md         # Image naming, formats, and conventions
 ├── validate.js           # Schema validator for sentences.json (Node)
 └── README.md             # This file
 ```
@@ -72,6 +74,8 @@ Edit `data/sentences.json` and append to the `sentences` array:
   "id": "restaurant-02",
   "category": "restaurant",
   "ko": "얼마예요?",
+  "image": "images/restaurant-02.svg",
+  "imageAlt": "Customer pointing at the menu while asking the waiter",
   "translations": {
     "en": {
       "meaning": "How much is it?",
@@ -81,7 +85,47 @@ Edit `data/sentences.json` and append to the `sentences` array:
 }
 ```
 
+The `image` and `imageAlt` fields are optional. If omitted, or if the file
+fails to load, the card falls back to the category emoji in a pastel tile —
+so no card ever appears broken.
+
 Run `node validate.js` to confirm the schema is still valid.
+
+## Adding a Card Illustration
+
+Every card has a dedicated illustration slot that helps the phrase stick in
+memory. The image is always present in the layout — if the file is missing
+or fails to load, a category emoji appears in a soft pastel tile as
+fallback.
+
+### Steps
+
+1. Drop an illustration into `images/` named after the sentence id. For
+   `restaurant-02`, save it as `images/restaurant-02.svg`.
+2. Add an `image` field pointing at the file and an `imageAlt` field
+   describing the scene for screen readers:
+
+   ```json
+   {
+     "id": "restaurant-02",
+     "image": "images/restaurant-02.svg",
+     "imageAlt": "Customer pointing at the menu while asking the waiter"
+   }
+   ```
+
+3. Run `node validate.js`.
+
+### Recommended format
+
+- **SVG** (preferred) — vector, crisp at any size, tiny files, themes well.
+- **Aspect ratio**: 1:1 square; design inside a 240×240 viewBox.
+- **Palette**: warm and friendly to match the site (`#fffbf5`, `#fff0e0`,
+  `#f97316` coral accent).
+- **Self-contained**: no external font references or remote URLs — the
+  illustration should work fully offline.
+- Other accepted formats: `.png`, `.jpg`, `.jpeg`, `.webp`, `.gif`.
+
+See [`images/README.md`](images/README.md) for the full convention.
 
 ## Adding a New Language
 
@@ -178,6 +222,8 @@ Exits with code `0` on success, `1` on any error. Useful in CI before deploying.
 
 - Semantic HTML (`<header>`, `<main>`, `<section>`, `<article>`, `<footer>`)
 - Each play button has `aria-label="Listen to {korean}"`
+- Card illustrations carry a descriptive `alt` (via the `imageAlt` field)
+  so screen readers can announce the scene
 - `prefers-reduced-motion` disables hover lift and pulse animation
 - Color contrast meets WCAG AA
 - Keyboard: Tab through cards, Space/Enter to play
