@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="t01">
+  <title id="t01">Two people greeting each other with a wave</title>
+  <rect width="240" height="240" fill="#fff4e6"/>
+  <rect y="170" width="240" height="70" fill="#ffe8d6"/>
+  <!-- Sparkle between -->
+  <text x="120" y="58" text-anchor="middle" font-size="34" fill="#ec4899" font-family="sans-serif">✿</text>
+  <text x="50" y="200" text-anchor="middle" font-size="20" fill="#f97316" font-family="sans-serif">✦</text>
+  <text x="190" y="195" text-anchor="middle" font-size="20" fill="#14b8a6" font-family="sans-serif">✦</text>
+  <!-- Left character -->
+  <g>
+    <path d="M 48 78 Q 75 48 102 78 L 100 88 Q 75 64 50 88 Z" fill="#3b2417"/>
+    <circle cx="75" cy="90" r="26" fill="#fcd9b6"/>
+    <circle cx="66" cy="88" r="2.5" fill="#1f2937"/>
+    <circle cx="84" cy="88" r="2.5" fill="#1f2937"/>
+    <path d="M 67 100 Q 75 107 83 100" stroke="#1f2937" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <circle cx="62" cy="98" r="3.5" fill="#fca5a5" opacity="0.6"/>
+    <circle cx="88" cy="98" r="3.5" fill="#fca5a5" opacity="0.6"/>
+    <rect x="50" y="120" width="50" height="55" rx="10" fill="#f97316"/>
+    <!-- Waving arm -->
+    <path d="M 100 128 Q 120 100 132 70" stroke="#fcd9b6" stroke-width="13" fill="none" stroke-linecap="round"/>
+    <circle cx="135" cy="65" r="10" fill="#fcd9b6"/>
+  </g>
+  <!-- Right character (mirrored) -->
+  <g transform="translate(240 0) scale(-1 1)">
+    <path d="M 48 78 Q 75 48 102 78 L 100 88 Q 75 64 50 88 Z" fill="#6b4423"/>
+    <circle cx="75" cy="90" r="26" fill="#fcd9b6"/>
+    <circle cx="66" cy="88" r="2.5" fill="#1f2937"/>
+    <circle cx="84" cy="88" r="2.5" fill="#1f2937"/>
+    <path d="M 67 100 Q 75 107 83 100" stroke="#1f2937" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <circle cx="62" cy="98" r="3.5" fill="#fca5a5" opacity="0.6"/>
+    <circle cx="88" cy="98" r="3.5" fill="#fca5a5" opacity="0.6"/>
+    <rect x="50" y="120" width="50" height="55" rx="10" fill="#ec4899"/>
+    <path d="M 100 128 Q 120 100 132 70" stroke="#fcd9b6" stroke-width="13" fill="none" stroke-linecap="round"/>
+    <circle cx="135" cy="65" r="10" fill="#fcd9b6"/>
+  </g>
+</svg>

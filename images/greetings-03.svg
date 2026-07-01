@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="t03">
+  <title id="t03">Person bowing apologetically</title>
+  <rect width="240" height="240" fill="#fff4e6"/>
+  <rect y="170" width="240" height="70" fill="#ffe8d6"/>
+  <!-- "sorry" lines above -->
+  <text x="80" y="65" text-anchor="middle" font-size="28" fill="#ec4899" font-family="sans-serif" opacity="0.7">…</text>
+  <text x="160" y="70" text-anchor="middle" font-size="22" fill="#f97316" font-family="sans-serif" opacity="0.7">…</text>
+  <!-- Bowing character: head down, body folded forward -->
+  <g>
+    <!-- Body horizontal-ish (deep bow) -->
+    <ellipse cx="120" cy="155" rx="70" ry="14" fill="#f97316"/>
+    <!-- Legs -->
+    <rect x="80" y="160" width="14" height="35" rx="6" fill="#3b2417"/>
+    <rect x="146" y="160" width="14" height="35" rx="6" fill="#3b2417"/>
+    <!-- Hands on knees -->
+    <circle cx="80" cy="160" r="10" fill="#fcd9b6"/>
+    <circle cx="160" cy="160" r="10" fill="#fcd9b6"/>
+    <!-- Head bowed down -->
+    <circle cx="120" cy="150" r="22" fill="#fcd9b6"/>
+    <path d="M 100 142 Q 120 130 140 142 L 140 148 Q 120 138 100 148 Z" fill="#3b2417"/>
+    <!-- Closed sad eyes (downward arcs) -->
+    <path d="M 110 152 q 4 4 8 0" stroke="#1f2937" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 122 152 q 4 4 8 0" stroke="#1f2937" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- Small frown -->
+    <path d="M 114 162 Q 120 159 126 162" stroke="#1f2937" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Sweat drop -->
+    <path d="M 152 130 q -4 8 0 12 q 4 -4 0 -12 z" fill="#14b8a6" opacity="0.8"/>
+  </g>
+</svg>
